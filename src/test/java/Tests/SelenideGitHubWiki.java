@@ -18,7 +18,7 @@ public class SelenideGitHubWiki {
         $("[name=q]").setValue("Selenide/Selenide").pressEnter();
         $$("ul.repo-list li").first().$("a").click();
         //Убедиться что мы на нужной странице
-        $("h1").shouldHave(Condition.text("selenide"));
+        $("h1").shouldHave(Condition.text("selenide / selenide"));
         //Перейти на Wiki страницу
         $(byText("Wiki")).click();
         //Убедится, что в списке страниц есть страница SoftAssertions
