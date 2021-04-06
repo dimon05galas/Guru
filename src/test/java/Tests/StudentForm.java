@@ -51,16 +51,16 @@ public class StudentForm {
 
         //Проверяем
 
-        $x("//td[text()='Student Name']").parent().shouldHave(text("John Seena"));
-        $x("//td[text()='Student Email']").parent().shouldHave(text("JohnSeena@mail.ru"));
-        $x("//td[text()='Gender']").parent().shouldHave(text("Male"));
-        $x("//td[text()='Mobile']").parent().shouldHave(text("1111111111"));
-        $x("//td[text()='Date of Birth']").parent().shouldHave(text("10"));
-        $x("//td[text()='Subjects']").parent().shouldHave(text("Chemistry"));
-        $x("//td[text()='Hobbies']").parent().shouldHave(text("Sports, Music"));
-        $x("//td[text()='Picture']").parent().shouldHave(text("John.jpg"));
-        $x("//td[text()='Address']").parent().shouldHave(text("Cannon street. House 3. Apartment 45"));
-        $x("//td[text()='State and City']").parent().shouldHave(text("Uttar Pradesh Merrut"));
+        $x("//td[.='Student Name']").parent().shouldHave(text("John Seena"));
+        $x("//td[.='Student Email']").parent().shouldHave(text("JohnSeena@mail.ru"));
+        $x("//td[.='Gender']").parent().shouldHave(text("Male"));
+        $x("//td[.='Mobile']").parent().shouldHave(text("1111111111"));
+        $x("//td[.='Date of Birth']").parent().shouldHave(text("10"));
+        $x("//td[.='Subjects']").parent().shouldHave(text("Chemistry"));
+        $x("//td[.='Hobbies']").parent().shouldHave(text("Sports, Music"));
+        $x("//td[.='Picture']").parent().shouldHave(text("John.jpg"));
+        $x("//td[.='Address']").parent().shouldHave(text("Cannon street. House 3. Apartment 45"));
+        $x("//td[.='State and City']").parent().shouldHave(text("Uttar Pradesh Merrut"));
 
     }
 }
